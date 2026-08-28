@@ -1,4 +1,44 @@
 # SALMON
+
+# 🍣 SALMON (Screenshot Action-Linker for Maps & Organized Notes)
+
+> **스마트폰 스크린샷 한 장으로 완성되는 지능형 개인 정보 비서**  
+> OCR 및 멀티모달 AI 비전 기술을 통해 스크린샷 속 텍스트, 일정, 장소, 링크를 자동 추출하고 체계적으로 관리합니다.
+
+---
+
+## 📌 프로젝트 소개 (Overview)
+
+현대인은 중요한 정보(공모전, 장학금 공고, 항공권, 맛집, 모바일 쿠폰 등)를 간편하게 캡처하지만, 갤러리에 쌓인 이미지를 다시 찾거나 캘린더/지도에 직접 옮겨 적는 데 많은 번거로움을 겪습니다.
+
+**SALMON**은 스크린샷 이미지를 업로드하는 즉시:
+1. **AI 멀티모달 분석**: 텍스트(OCR) 인식 및 핵심 정보(상호명, 마감일, 주소, URL) 추출
+2. **자동 분류 & 매핑**: 카테고리 자동 분류 및 캘린더 일정/지도 장소 자동 등록
+3. **지능형 RAG 챗봇**: 저장된 스크린샷 내용을 자연어로 질의응답
+4. **개인화 푸시 알림**: D-Day 및 일일 요약 알림 제공
+
+---
+
+## 🛠 기술 스택 (Tech Stack)
+
+### Frontend
+- **Framework**: Flutter (Dart)
+- **UI/Theme**: Material 3 Design
+- **Push Notification**: Firebase Cloud Messaging (FCM), Flutter Local Notifications
+
+### Backend & AI
+- **Framework**: FastAPI (Python 3.10+)
+- **AI Vision / LLM**: IBM watsonx.ai (`meta-llama/llama-4-maverick-17b-128e-instruct-fp8`)
+- **Embedding Model**: IBM watsonx.ai (`intfloat/multilingual-e5-large`)
+- **Vector DB**: Qdrant Cloud (스크린샷 기반 RAG 시맨틱 검색)
+- **Database & Storage**: Supabase (PostgreSQL, Storage)
+- **Task Scheduler**: APScheduler (KST 기준 D-Day/일일 브리핑 푸시)
+
+---
+
+## 📂 프로젝트 구조 (Project Structure)
+
+```text
 SALMON/
 ├── backend/                           # FastAPI 백엔드 서버
 │   ├── main.py                        # 엔트리포인트 & watsonx/Qdrant 분석 파이프라인
