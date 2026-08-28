@@ -35,9 +35,9 @@ jobs:
         working-directory: ./frontend/android/app
         run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' | base64 -d > google-services.json
         
-      - name: Build APK
+      - name: Build Debug APK
         working-directory: ./frontend
-        run: flutter build apk --release
+        run: flutter build apk --debug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
