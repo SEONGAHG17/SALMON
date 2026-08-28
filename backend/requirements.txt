@@ -1,0 +1,17 @@
+
+# chat-bot 
+
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+google-generativeai
+supabase
+qdrant-client
+numpy==1.26.4
+pandas==2.2.3
+ibm-watsonx-ai==1.6.3
+firebase-admin
+apscheduler
+
+ 
