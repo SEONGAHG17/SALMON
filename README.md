@@ -1,6 +1,6 @@
 # SALMON
 
-# 🍣 SALMON (Screenshot Action-Linker for Maps & Organized Notes)
+# 🐟 SALMON (Screenshot Action-Linker for Maps & Organized Notes)
 
 > **스마트폰 스크린샷 한 장으로 완성되는 지능형 개인 정보 비서**  
 > OCR 및 멀티모달 AI 비전 기술을 통해 스크린샷 속 텍스트, 일정, 장소, 링크를 자동 추출하고 체계적으로 관리합니다.
