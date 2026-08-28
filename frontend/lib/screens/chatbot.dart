@@ -304,7 +304,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
                     style: TextStyle(color: AppColors.textTertiary, fontSize: 12),
                   ),
                 ],
-              ), SW 관련 뭐 있었나?
+              ), 
             ), 
           Container(
             padding: const EdgeInsets.symmetric(
